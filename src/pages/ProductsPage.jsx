@@ -9,11 +9,17 @@ export default function ProductsPage() {
     { id: 2, title: "Prodotto B", price: 50 },
     { id: 3, title: "Prodotto C", price: 15 },
   ];
+
+  const filteredProducts = budgetMode
   
 
   
 
   return (
+
+    <div>
+        <h1>Prodotti</h1>
+    </div>
      
   );
 }
