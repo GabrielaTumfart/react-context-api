@@ -7,6 +7,10 @@ import { BudgetProvider } from "./contexts/BudgetContext.jsx";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <BudgetProvider>
+        <App />
+      </BudgetProvider>
+    </BrowserRouter>
   </StrictMode>,
 )
