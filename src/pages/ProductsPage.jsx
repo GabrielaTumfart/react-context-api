@@ -19,6 +19,13 @@ export default function ProductsPage() {
 
     <div>
         <h1>Prodotti</h1>
+        <ul>
+        {filteredProducts.map((p) => (
+          <li key={p.id}>
+            {p.title} — €{p.price}
+          </li>
+        ))}
+      </ul>
     </div>
      
   );
