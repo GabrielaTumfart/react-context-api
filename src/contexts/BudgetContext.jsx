@@ -1,14 +1,17 @@
-import { useBudget } from "../contexts/BudgetContext";
+import { createContext, useContext, useState } from "react";
 
-export default function Navbar() {
-    const { budgetMode, setBudgetMode } = useBudget();
+const BudgetContext = createContext();
+
+function BudgetProvider({ children }) {
+    const [budgetMode, setBudgetMode] = useState(false);
 
     return (
 
-        <button>
-            
-        </button>
-
 
     );
-}  
+
+
+  
+    
+    }
+
