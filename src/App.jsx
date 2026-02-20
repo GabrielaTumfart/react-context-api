@@ -10,8 +10,11 @@ export default function App() {
 
   return (
     <>
+
+      <Navbar />
+    
      
-      <h1>React Context API</h1>
+        <h1>React Context API</h1>
 
     </>
   )

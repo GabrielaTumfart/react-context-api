@@ -6,6 +6,7 @@ export default function Navbar() {
     return (
 
         <button onClick={() => setBudgetMode(!budgetMode)}>
+            {budgetMode ? "Disattiva Modalità Budget" : "Attiva Modalità Budget"}
             
         </button>
 
