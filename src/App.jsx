@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from "./components/Navbar";
+import { Routes, Route } from "react-router-dom";
+import ProductsPage from "./pages/ProductsPage";
+
 
 
 export default function App() {
@@ -12,9 +15,12 @@ export default function App() {
     <>
 
       <Navbar />
-    
-     
-        <h1>React Context API</h1>
+        
+        <Routes>
+          <Route path="/" element={<h1>React Context API</h1>} />
+          <Route path="/products" element={<ProductsPage />} />
+
+        </Routes>
 
     </>
   )
